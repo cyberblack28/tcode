@@ -1,6 +1,6 @@
 #Stage-1
 FROM golang:1.14.1-alpine3.11 as builder
-COPY ./app/main.go ./
+COPY ./main.go ./
 RUN go build -o /gitops-go-app ./main.go
 
 #Stage-2
