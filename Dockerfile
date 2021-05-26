@@ -1,6 +1,6 @@
 #Stage-1
 FROM golang:1.15 as builder
-COPY ./app/main.go ./
+COPY ./main.go ./
 RUN go build -o /gitops-go-app ./main.go
 
 #Stage-2
